@@ -1,0 +1,142 @@
+{
+  "project": {
+    "name": "story",
+    "type": "website",
+    "description": "Immersive bioluminescent rainforest storytelling website with cinematic journey experience",
+    "version": "1.0.0"
+  },
+  "files": [
+    {
+      "path": "src/App.tsx",
+      "lines": 31,
+      "type": "component",
+      "description": "Main application router with React Router setup and Layout wrapper",
+      "exports": ["App"],
+      "imports": ["react", "react-router-dom", "@tanstack/react-query", "@/components/ui/*", "@/layout/Layout", "@/pages/*"]
+    },
+    {
+      "path": "src/layout/Layout.tsx",
+      "lines": 24,
+      "type": "component",
+      "description": "Immersive storytelling layout with minimal chrome and full-viewport sections",
+      "exports": ["Layout"],
+      "imports": ["react-router-dom", "./Navbar"]
+    },
+    {
+      "path": "src/layout/Navbar.tsx",
+      "lines": 103,
+      "type": "component",
+      "description": "Floating glassmorphic navigation with journey links and mobile responsiveness",
+      "exports": ["Navbar"],
+      "imports": ["react", "react-router-dom", "lucide-react", "@/components/ui/button"]
+    },
+    {
+      "path": "src/pages/Home.tsx",
+      "lines": 258,
+      "type": "page",
+      "description": "Cinematic opening scene with hero section, floating particles, and journey introduction",
+      "exports": ["Home"],
+      "imports": ["react", "lucide-react", "react-router-dom"]
+    },
+    {
+      "path": "src/pages/Thecanopy.tsx",
+      "lines": 289,
+      "type": "page",
+      "description": "Upper jungle canopy layer with glowing insects, parallax effects, and creature encounters",
+      "exports": ["Thecanopy"],
+      "imports": ["react", "lucide-react", "react-router-dom"]
+    },
+    {
+      "path": "src/pages/Thedepths.tsx",
+      "lines": 312,
+      "type": "page",
+      "description": "Darker river-filled lower jungle with ancient roots, hidden creatures, and mystical encounters",
+      "exports": ["Thedepths"],
+      "imports": ["react", "lucide-react", "react-router-dom"]
+    },
+    {
+      "path": "src/pages/Thesource.tsx",
+      "lines": 276,
+      "type": "page",
+      "description": "Hidden waterfall destination revealing the full bioluminescent world beauty",
+      "exports": ["Thesource"],
+      "imports": ["react", "lucide-react", "react-router-dom"]
+    },
+    {
+      "path": "src/pages/NotFound.tsx",
+      "lines": 12,
+      "type": "page",
+      "description": "404 error page for unmatched routes",
+      "exports": ["NotFound"]
+    },
+    {
+      "path": "src/pages/Welcome.tsx",
+      "lines": 26,
+      "type": "page",
+      "description": "Starter welcome page (replaced by Home)",
+      "exports": ["Welcome"]
+    },
+    {
+      "path": "src/main.tsx",
+      "lines": 10,
+      "type": "entry",
+      "description": "Application entry point",
+      "exports": ["default"]
+    }
+  ],
+  "components": {
+    "ui": [
+      "button", "card", "input", "label", "select", "textarea", "dialog", "sheet",
+      "dropdown-menu", "popover", "table", "badge", "avatar", "separator", "tooltip",
+      "toast", "sonner", "switch", "tabs", "progress", "skeleton", "scroll-area",
+      "command", "calendar", "alert", "alert-dialog", "drawer", "form", "accordion",
+      "breadcrumb", "checkbox", "collapsible", "context-menu", "hover-card", "menubar",
+      "navigation-menu", "pagination", "radio-group", "resizable", "slider", "toggle",
+      "toggle-group", "input-otp", "aspect-ratio", "carousel", "chart"
+    ],
+    "custom": ["Navbar", "Layout"]
+  },
+  "routes": [
+    { "path": "/", "component": "Home", "description": "Cinematic opening scene" },
+    { "path": "/the-canopy", "component": "Thecanopy", "description": "Upper jungle canopy layer" },
+    { "path": "/the-depths", "component": "Thedepths", "description": "Lower jungle river layer" },
+    { "path": "/the-source", "component": "Thesource", "description": "Hidden waterfall destination" },
+    { "path": "*", "component": "NotFound", "description": "404 error page" }
+  ],
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "@tanstack/react-query": "^5.56.2",
+    "lucide-react": "^0.462.0",
+    "tailwindcss": "^3.4.17",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0"
+  },
+  "theme": {
+    "palette": {
+      "base": ["slate-950", "slate-900", "slate-800"],
+      "primary": "emerald-400",
+      "accent": ["cyan-400", "fuchsia-500", "lime-400"],
+      "glow": "rgba(16, 185, 129, 0.4)"
+    },
+    "typography": "font-extralight tracking-wide",
+    "style": "cinematic glassmorphism with bioluminescent accents"
+  },
+  "features": [
+    "Immersive scroll-driven journey",
+    "Floating particle effects (fireflies, spores)",
+    "Parallax background layers",
+    "Dynamic lighting transitions",
+    "Audio toggle for ambient sounds",
+    "Glassmorphism narrative cards",
+    "Floating navigation orb",
+    "Mobile-optimized touch experience"
+  ],
+  "performance": {
+    "cssAnimations": true,
+    "webgl": false,
+    "optimizedParticles": true,
+    "lazyLoading": false
+  }
+}

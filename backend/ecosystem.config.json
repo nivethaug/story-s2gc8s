@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "story-s2gc8s-backend",
+      "script": "/root/clawd-backend/scripts/backend-sandbox.sh",
+      "args": "/root/dreampilot/dreampilotvenv /workspaces/user_42/website/1982_story_20260815_190346/backend 8014",
+      "cwd": "/workspaces/user_42/website/1982_story_20260815_190346/backend",
+      "interpreter": "/bin/bash",
+      "instances": 1,
+      "exec_mode": "fork",
+      "watch": false,
+      "max_memory_restart": "900M",
+      "out_file": "/workspaces/user_42/website/1982_story_20260815_190346/backend/logs/out.log",
+      "error_file": "/workspaces/user_42/website/1982_story_20260815_190346/backend/logs/error.log",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "env": {
+        "PORT": "8014",
+        "BACKEND_HOST": "0.0.0.0",
+        "BACKEND_PORT": "8014",
+        "PROJECT_NAME": "story-s2gc8s",
+        "DATABASE_URL": "postgresql://story_s2gc8s_user:YALB2jB2NatK2QFGwVJ1abwJpoH6V3js@localhost:5432/story_s2gc8s_db"
+      }
+    }
+  ]
+}
