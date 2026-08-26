@@ -170,6 +170,48 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-950 to-transparent" />
       </section>
 
+      {/* About the Journey Section */}
+      <section data-testid="home-about-journey-section" className="relative py-24 md:py-32 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2
+            data-testid="home-about-journey-title"
+            className="text-3xl md:text-5xl font-extralight tracking-wider mb-8 text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 via-cyan-200 to-purple-200"
+          >
+            About the Journey
+          </h2>
+          <p
+            data-testid="home-about-journey-text"
+            className="text-lg md:text-xl text-emerald-100/70 font-light tracking-wide leading-relaxed max-w-2xl mx-auto mb-16"
+          >
+            Every step through the forest reveals a new wonder — from the glowing canopy above to the hidden depths below. This journey is an invitation to slow down, look closer, and let the light of the forest guide you through its three living realms.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div data-testid="home-about-journey-card-canopy" className="p-6 rounded-2xl bg-slate-900/40 backdrop-blur-xl border border-cyan-500/10 shadow-xl transition-all duration-500 hover:border-cyan-400/30 hover:shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+              <div className="w-3 h-3 rounded-full bg-emerald-400/60 blur-sm mx-auto mb-4" aria-hidden="true" />
+              <h3 className="text-lg font-light tracking-widest text-emerald-200/90 mb-3">The Canopy</h3>
+              <p className="text-sm text-emerald-100/60 font-light leading-relaxed">
+                Drift among luminous leaves where the forest breathes light into the sky.
+              </p>
+            </div>
+            <div data-testid="home-about-journey-card-depths" className="p-6 rounded-2xl bg-slate-900/40 backdrop-blur-xl border border-purple-500/10 shadow-xl transition-all duration-500 hover:border-purple-400/30 hover:shadow-[0_0_30px_rgba(168,85,247,0.15)]">
+              <div className="w-3 h-3 rounded-full bg-purple-400/60 blur-sm mx-auto mb-4" aria-hidden="true" />
+              <h3 className="text-lg font-light tracking-widest text-purple-200/90 mb-3">The Depths</h3>
+              <p className="text-sm text-emerald-100/60 font-light leading-relaxed">
+                Descend into shadowed hollows where rare creatures glow in the dark.
+              </p>
+            </div>
+            <div data-testid="home-about-journey-card-source" className="p-6 rounded-2xl bg-slate-900/40 backdrop-blur-xl border border-pink-500/10 shadow-xl transition-all duration-500 hover:border-pink-400/30 hover:shadow-[0_0_30px_rgba(244,114,182,0.15)]">
+              <div className="w-3 h-3 rounded-full bg-pink-400/60 blur-sm mx-auto mb-4" aria-hidden="true" />
+              <h3 className="text-lg font-light tracking-widest text-pink-200/90 mb-3">The Source</h3>
+              <p className="text-sm text-emerald-100/60 font-light leading-relaxed">
+                Discover the hidden spring where all the forest's magic is born.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Spirit Guide Quote Card */}
       <div className="fixed bottom-8 left-8 z-30 max-w-xs opacity-0 animate-[fadeIn_1s_ease_3s_forwards]">
         <div className="relative p-4 rounded-2xl bg-slate-900/40 backdrop-blur-xl border border-cyan-500/10 shadow-xl">
